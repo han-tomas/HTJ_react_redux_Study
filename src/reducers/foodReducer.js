@@ -8,7 +8,9 @@ const initialState={
     category:[],
     cate_food:[],
     food_detail:{},
-    cate_info:{}
+    cate_info:{},
+    page_info:{},
+    news_data:[]
 }
 /*
        react = JSP
@@ -49,6 +51,11 @@ export default function(state=initialState,action){
             return{
                 ...state,
                 food_detail: action.payload
+            }
+        case FETCH_NEWS:
+            return{
+                ...state,
+                news_data: action.payload
             }
         default:
             return state;

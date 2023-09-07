@@ -3,7 +3,6 @@ import {NavLink,useNavigate} from "react-router-dom";
 import {useEffect,useState} from "react";
 import {useParams} from "react-router";
 import axios from "axios";
-import {FETCH_FOOD_DETAIL} from "../../actions/types";
 import {fetchFoodDetail} from "../../actions/foodActions";
 import {useSelector,useDispatch} from "react-redux";
 
